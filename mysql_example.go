@@ -25,11 +25,12 @@ var settings = mysql.ConnectionURL{
   Password: "upperpass",             // Optional user password.
 }
 
-type Birthday struct {
-  // Maps the "Name" property to the "name" column of the "birthday" table.
-  Name string `db:"name"`
-  // Maps the "Born" property to the "born" column of the "birthday" table.
-  Born time.Time `db:"born"`
+type Films struct {
+  Code string `db:"code"`
+  Title string `db:"title"`
+  Length int `db:"length"`
+  Date time.Time `db:"date"`
+  kind string `db:"kind"`
 }
   
   
